@@ -277,7 +277,7 @@ footer a img {
   height: 3rem;
 }
 
-/* adicionando  redimensionamento */
+/* adicionando  resolução para tablet*/
 @media (min-width: 768px) {
 
 
