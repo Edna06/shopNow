@@ -128,7 +128,7 @@ main .productsOnSale {
   padding: 4rem 4rem 5rem 4rem;
   display: flex;
   justify-content: space-around;
-  gap: 4rem;
+  gap: 1rem;
   /* flex-direction: row;  */
   flex-wrap: wrap;
    
@@ -137,6 +137,8 @@ main .productsOnSale {
 .card {
   transition: all 0.8s;
   filter: contrast(0.8);
+
+
 }
 
 .card:hover {
@@ -146,8 +148,8 @@ main .productsOnSale {
 }
 
 main .productsOnSale .card img {
-  width: 16rem;
-  height: 15rem;
+  width: 11rem;
+  height: 11rem;
 }
 
 
@@ -267,6 +269,35 @@ footer a img {
 
 /* adicionando  redimensionamento */
 
-@media screen {
+@media (min-width: 1024px) {
+
+
+  main .banner{
+    height: 37.1rem;
+
+  }
+
+
+
+
+
+
+
+
+
+
+    main .productsOnSale {
+    gap: 5rem;
+
+    border: 1px solid red;
+  }
+
   
+    main .productsOnSale .card img {
+      width: 30rem;
+      height: 30rem;
+    }
+    
+
+
 }
