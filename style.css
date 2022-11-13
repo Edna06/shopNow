@@ -20,7 +20,7 @@ body * {
 
 header {
   display: flex;
-  height: 9.4rem;
+  height: 6.4rem;
   align-items: center;
   justify-content: space-between;
   padding:0 3.28rem 0 3.2rem;
@@ -31,19 +31,19 @@ header {
 
 .logo-page {
   display: flex;
-  width: 12rem;
-  height: 3.1rem;
+  width: 10rem;
+  height: 2rem;
   justify-content: space-between;
   align-items: center;
 }
 
 .logo-page img {
-  width: 2.4rem;
-  height:3rem;
+  width: 2rem;
+  height:2.8rem;
 }
 
 .logo-page h3 {
-  font-size: 2.58rem;
+  font-size: 2.3rem;
   line-height: 3.1rem;
   font-family: 'Cabin', sans-serif;
   font-weight: 500;
@@ -53,8 +53,8 @@ header {
 }
 
 .option-icons {
-  width: 13.80rem;
-  height: 2.37rem;
+  width: 11rem;
+  height: 2rem;
   display: flex;
   justify-content: space-between;
 }
@@ -85,13 +85,13 @@ main .banner{
 
 main .image-banner img {
   margin: 5rem 0 5.7rem 0;
-  max-width: 36.8rem;
+  width: 36.8rem;
   height: 17rem;
 }
 
 .products .products-hader {
   border-bottom: 0.2px solid #a5a1a14f;
-  height: 6.89rem;
+  height: 5.9rem;
 
   display: flex;
   align-items: center;
@@ -106,7 +106,7 @@ main .image-banner img {
 
   font-style: normal;
   font-weight: 600;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   line-height: 16.8px;
   color: #161616;
 }
@@ -125,7 +125,7 @@ main #inventory {
 
 main .productsOnSale {
   max-width: 63rem;
-  padding: 4rem 4rem 5rem 4rem;
+  padding: 5rem 4rem 2rem 4rem;
   display: flex;
   justify-content: space-around;
   gap: 1rem;
@@ -134,14 +134,14 @@ main .productsOnSale {
    
 }
 
-.card {
+main .productsOnSale .card {
   transition: all 0.8s;
   filter: contrast(0.8);
 
-
+  margin-bottom:3rem ;
 }
 
-.card:hover {
+main .productsOnSale .card:hover {
     transform: scale(1.1);
     filter: brightness(1);
     cursor: pointer;
@@ -175,8 +175,6 @@ main .productsOnSale .card span{
 }
 
 /* saiba mais */
-
-
 main .know-more {
   background: #F9F9F9 ;
   padding: 4rem 4rem 5rem 4rem;
@@ -185,6 +183,11 @@ main .know-more {
   gap: 1.5rem;
 
   border-bottom: 0.2px solid #a5a1a14f;
+}
+
+main .know-more div {
+  display: flex;
+  flex-direction: column;
 }
 
 main .know-more a,
@@ -196,10 +199,14 @@ main .know-more .newsLetter input
   font-size: 1.6rem;
   line-height: 17px;
   text-decoration: none;
-  
+  margin-bottom: 1rem;
+
   color: #161616;
 }
 
+main .know-more .newsLetter label {
+  margin-bottom: 0;
+}
 
 main .know-more .newsLetter {
   margin-top: 5.4rem;
@@ -210,6 +217,7 @@ main .know-more .newsLetter {
 
 main .know-more .newsLetter input{
   height: 4.3rem;
+  width: 30rem;
 
   background: #F9F9F9;
   border: 0.2px solid #a5a1a14f;
@@ -220,6 +228,9 @@ main .know-more .newsLetter input{
 
 main .know-more .newsLetter button{
   height: 4.3rem;
+  width: 30rem;
+  margin-bottom:3rem ;
+
   background-color: #5CA720;
   border: none;
   border-radius: .4rem;
@@ -249,6 +260,8 @@ footer {
   padding: 2.7rem 3.1rem 3.5rem 3.4rem ;
   display: flex;
   justify-content: space-between;
+
+  background:  #F9F9F9;
 }
 
 footer .networks,
@@ -259,45 +272,139 @@ footer .payments{
   gap: 1.5rem;
 }
 
-
 footer a img {
   width: 3rem;
   height: 3rem;
-   
 }
-
 
 /* adicionando  redimensionamento */
+@media (min-width: 768px) {
 
-@media (min-width: 1024px) {
 
+  /* header */
+  header {
+    height: 7.4rem;
+    padding: 0 7rem 0 7.7rem;
+  }
+
+  .logo-page {
+    width: 14rem;
+    height: 3rem;
+  }
+  
+  .logo-page img {
+    width: 2.8rem;
+    height: 2.8rem;
+  }
+  
+  .logo-page h3 {
+    font-size: 3rem;
+  }
+  
+  .option-icons {
+    width: 17rem;
+    height: 2.5rem;
+  }
+  
+  main .image-banner img {
+    margin: 5rem 0 5.7rem 0;
+    width: 43rem;
+    height: 19rem;
+  }
+
+/* main */
+
+  main .products .products-hader {
+    height: 7.89rem;
+    padding: 0 7rem 0 7.7rem;
+  }
+
+  .products .products-hader h3 {
+    font-size: 1.9rem;
+  }
 
   main .banner{
-    height: 37.1rem;
+    height: 32rem;
 
+    align-items: center;
+    padding-top: 3rem;
+  }
+
+  /* configurando cards */
+  main .productsOnSale {
+    min-width: 81rem;
   }
 
 
-
-
-
-
-
-
-
-
-    main .productsOnSale {
-    gap: 5rem;
-
-    border: 1px solid red;
+  main .productsOnSale .card {
+  min-width: 22rem;
+  height: 26rem
   }
 
-  
-    main .productsOnSale .card img {
-      width: 30rem;
-      height: 30rem;
-    }
-    
 
+  main .productsOnSale .card img {
+    width: 22rem;
+    height: 20rem;
+  }
+
+
+  main .productsOnSale .card p {
+    font-size: 1.9rem;  
+  }
+
+  main .know-more {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 3rem 7rem 4rem 7.7rem;
+  }
+
+  main .know-more a {
+  font-size: 1.9rem;
+  }
+
+  main .know-more .newsLetter {
+    width: 40rem;
+  }
+
+
+  main .know-more .newsLetter label{
+    font-size: 1.8rem;
+  }
+
+  main .know-more .newsLetter .input{
+    display: flex;
+    flex-direction: row;
+  }
+
+  main .know-more .newsLetter input{
+    width: 29.7rem;
+    border-radius: 1rem 0rem 0rem 1rem;
+  }
+
+  main .know-more .newsLetter button{ 
+    width: 10rem;
+    border-radius: 0rem 1rem 1rem 0rem;
+  }
+
+
+  /* footer */
+  footer {
+    padding: 4rem 7rem 5.4rem 7.7rem ;
+  }
+
+  footer .networks,
+  footer .payments{
+    gap: 3rem;
+  }
+
+  footer a img {
+    width: 3.3rem;
+    height: 3.3rem;
+  }
 
 }
+
+
