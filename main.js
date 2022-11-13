@@ -18,3 +18,10 @@ createCard('06', 'Sabonetes artesanais <br> hidratantes', "50,00") +
 createCard('07', 'Óleo natural', "50,00") +
 createCard('08', 'Sabonetes veganos', "50,00") +
 createCard('09', 'Spray clareador', "50,00")
+
+
+
+function removingPattern(event) {
+ event = event || window.event
+ event.preventDefault()
+}
