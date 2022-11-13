@@ -1,0 +1,272 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --bg-color: #ffffff;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+body * {
+  font-family: 'Lato', sans-serif;
+}
+
+header {
+  display: flex;
+  height: 9.4rem;
+  align-items: center;
+  justify-content: space-between;
+  padding:0 3.28rem 0 3.2rem;
+
+  background-color: var(--bg-color);
+}
+
+
+.logo-page {
+  display: flex;
+  width: 12rem;
+  height: 3.1rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-page img {
+  width: 2.4rem;
+  height:3rem;
+}
+
+.logo-page h3 {
+  font-size: 2.58rem;
+  line-height: 3.1rem;
+  font-family: 'Cabin', sans-serif;
+  font-weight: 500;
+  font-style: normal;
+
+  color: #161616;
+}
+
+.option-icons {
+  width: 13.80rem;
+  height: 2.37rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+header .option-icons img,
+footer img {
+transition: all 0.4s;
+
+}
+
+header .option-icons img:hover,
+footer img:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+main {
+  background: #ffffff;
+}
+
+main .banner{
+  height: 26.1rem;
+
+  background-color: #ADDE87;
+  background-image: url(./assets/bg-banner.svg);
+  text-align: center;
+}
+
+main .image-banner img {
+  margin: 5rem 0 5.7rem 0;
+  max-width: 36.8rem;
+  height: 17rem;
+}
+
+.products .products-hader {
+  border-bottom: 0.2px solid #a5a1a14f;
+  height: 6.89rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding:0 3.28rem 0 3.2rem;
+}
+
+
+.products .products-hader h3 {
+ 
+  text-transform: uppercase;
+
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 16.8px;
+  color: #161616;
+}
+
+
+/* produtos a venda  */
+
+main #inventory {
+  display:flex;
+  justify-content: center;
+
+  border-bottom: 0.2px solid #a5a1a14f;
+  padding-bottom: 8rem;
+}
+
+
+main .productsOnSale {
+  max-width: 63rem;
+  padding: 4rem 4rem 5rem 4rem;
+  display: flex;
+  justify-content: space-around;
+  gap: 4rem;
+  /* flex-direction: row;  */
+  flex-wrap: wrap;
+   
+}
+
+.card {
+  transition: all 0.8s;
+  filter: contrast(0.8);
+}
+
+.card:hover {
+    transform: scale(1.1);
+    filter: brightness(1);
+    cursor: pointer;
+}
+
+main .productsOnSale .card img {
+  width: 16rem;
+  height: 15rem;
+}
+
+
+main .productsOnSale .card p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 14px;
+  margin: 0.8rem 0;
+  
+  color: #161616;
+}
+
+main .productsOnSale .card h3{
+  color:#161616;
+  font-size: 1.2rem;
+  font-style: normal;
+}
+
+main .productsOnSale .card span{
+  color: #5CA720;
+  margin-left: 0.6rem;
+}
+
+/* saiba mais */
+
+
+main .know-more {
+  background: #F9F9F9 ;
+  padding: 4rem 4rem 5rem 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+
+  border-bottom: 0.2px solid #a5a1a14f;
+}
+
+main .know-more a,
+main .know-more .newsLetter label,
+main .know-more .newsLetter input
+{
+
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 17px;
+  text-decoration: none;
+  
+  color: #161616;
+}
+
+
+main .know-more .newsLetter {
+  margin-top: 5.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+main .know-more .newsLetter input{
+  height: 4.3rem;
+
+  background: #F9F9F9;
+  border: 0.2px solid #a5a1a14f;
+  padding: 2rem;
+  font-weight: 400;
+  border-radius: .4rem;
+}
+
+main .know-more .newsLetter button{
+  height: 4.3rem;
+  background-color: #5CA720;
+  border: none;
+  border-radius: .4rem;
+
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.01em;
+
+  color: #FFFFFF;
+
+  transition: all 0.4s;
+}
+
+main .know-more .newsLetter button:hover{
+  transform: scale(0.99);
+  filter: brightness(0.9);
+
+  cursor: pointer;
+}
+
+/* footer */
+
+footer {
+  padding: 2.7rem 3.1rem 3.5rem 3.4rem ;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .networks,
+footer .payments{
+  display: flex;
+  flex-direction: row;
+
+  gap: 1.5rem;
+}
+
+
+footer a img {
+  width: 3rem;
+  height: 3rem;
+   
+}
+
+
+/* adicionando  redimensionamento */
+
+@media screen {
+  
+}
